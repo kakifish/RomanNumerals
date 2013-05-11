@@ -8,32 +8,36 @@ public class RomanNumerals
 
 	public RomanNumerals()
 	{
-		arabicNumerals = new int[5];
-		arabicNumerals[0] = 100;
-		arabicNumerals[1] = 50;
-		arabicNumerals[2] = 10;
-		arabicNumerals[3] = 5;
-		arabicNumerals[4] = 1;
+		arabicNumerals = new int[6];
+		arabicNumerals[0] = 500;		
+		arabicNumerals[1] = 100;
+		arabicNumerals[2] = 50;
+		arabicNumerals[3] = 10;
+		arabicNumerals[4] = 5;
+		arabicNumerals[5] = 1;
 		
 		
-		specialArabicNumerals = new int[4];
-		specialArabicNumerals[0] = 90;		
-		specialArabicNumerals[1] = 40;		
-		specialArabicNumerals[2] = 9;
-		specialArabicNumerals[3] = 4;
+		specialArabicNumerals = new int[5];
+		specialArabicNumerals[0] = 400;		
+		specialArabicNumerals[1] = 90;		
+		specialArabicNumerals[2] = 40;		
+		specialArabicNumerals[3] = 9;
+		specialArabicNumerals[4] = 4;
 		
-		romanNumerals = new String[5];
-		romanNumerals[0] = "C";
-		romanNumerals[1] = "L";
-		romanNumerals[2] = "X";
-		romanNumerals[3] = "V";
-		romanNumerals[4] = "I";
+		romanNumerals = new String[6];
+		romanNumerals[0] = "D";
+		romanNumerals[1] = "C";
+		romanNumerals[2] = "L";
+		romanNumerals[3] = "X";
+		romanNumerals[4] = "V";
+		romanNumerals[5] = "I";
 
-		specialRomanNumerals = new String[4];
-		specialRomanNumerals[0] = "XC";
-		specialRomanNumerals[1] = "XL";
-		specialRomanNumerals[2] = "IX";
-		specialRomanNumerals[3] = "IV";
+		specialRomanNumerals = new String[5];
+		specialRomanNumerals[0] = "CD";
+		specialRomanNumerals[1] = "XC";
+		specialRomanNumerals[2] = "XL";
+		specialRomanNumerals[3] = "IX";
+		specialRomanNumerals[4] = "IV";
 
 		
 	}
@@ -48,7 +52,7 @@ public class RomanNumerals
 				numberToRoman += romanNumerals[i];
 				num -= arabicNumerals[i];
 			}
-			if(i != 4 && num >= specialArabicNumerals[i])
+			if(i != 5 && num >= specialArabicNumerals[i])
 			{
 				numberToRoman += specialRomanNumerals[i];
 				num -= specialArabicNumerals[i];
