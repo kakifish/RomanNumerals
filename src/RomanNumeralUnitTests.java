@@ -155,5 +155,17 @@ public class RomanNumeralUnitTests
 		assertEquals("CDXCIX",arabicNumeral.toRoman(499));
 		assertEquals("CDXCIV",arabicNumeral.toRoman(494));
 	}
+	
+	@Test
+	public void if500to890Test()
+	{
+		assertEquals("D",arabicNumeral.toRoman(500));
+		assertEquals("DI",arabicNumeral.toRoman(501));
+		assertEquals("DL",arabicNumeral.toRoman(550));
+		assertEquals("DXXX",arabicNumeral.toRoman(530));
+		assertEquals("DCCVII",arabicNumeral.toRoman(707));
+		assertEquals("DCCCXC",arabicNumeral.toRoman(890));
+	}
+
 
 }
