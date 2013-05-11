@@ -8,7 +8,7 @@ public class RomanNumeralUnitTests
 	private RomanNumerals arabicNumeral = new RomanNumerals();
 
 	@Test
-	public void if1to3Test() 
+	public void if1to3Tests() 
 	{
 		assertEquals("I", arabicNumeral.toRoman(1));
 		assertEquals("II", arabicNumeral.toRoman(2));
