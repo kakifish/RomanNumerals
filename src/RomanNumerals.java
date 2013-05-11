@@ -19,20 +19,21 @@ public class RomanNumerals
 
 		specialRomanNumerals = new String[1];
 		specialRomanNumerals[0] = "IV";
+		
 	}
 	
 	public String toRoman(int num)
 	{	
 		String numberToRoman = "";
+		if(num >= specialArabicNumerals[0])
+		{
+			numberToRoman += specialRomanNumerals[0];
+			num -= specialArabicNumerals[0];
+		}
 		while(num >= arabicNumerals[0])
 		{
 			numberToRoman += romanNumerals[0];
 			num --;
-			if(num >= specialArabicNumerals[0])
-			{
-				numberToRoman += specialRomanNumerals[0];
-				num--;
-			}
 		}
 		
 		return numberToRoman;
