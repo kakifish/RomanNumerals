@@ -9,16 +9,16 @@ public class RomanNumerals
 	public RomanNumerals()
 	{
 		arabicNumerals = new int[2];
-		arabicNumerals[0] = 1;
-		arabicNumerals[1] = 5;
+		arabicNumerals[0] = 5;
+		arabicNumerals[1] = 1;
 		
 		
 		specialArabicNumerals = new int[1];
 		specialArabicNumerals[0] = 4;
 		
 		romanNumerals = new String[2];
-		romanNumerals[0] = "I";
-		romanNumerals[1] = "V";
+		romanNumerals[0] = "V";
+		romanNumerals[1] = "I";
 
 		specialRomanNumerals = new String[1];
 		specialRomanNumerals[0] = "IV";
@@ -35,7 +35,7 @@ public class RomanNumerals
 				numberToRoman += romanNumerals[i];
 				num -= arabicNumerals[i];
 			}
-			if(num >= specialArabicNumerals[i])
+			if(i != 1 && num >= specialArabicNumerals[i])
 			{
 				numberToRoman += specialRomanNumerals[i];
 				num -= specialArabicNumerals[i];

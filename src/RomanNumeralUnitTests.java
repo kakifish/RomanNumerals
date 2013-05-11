@@ -22,5 +22,6 @@ public class RomanNumeralUnitTests
 		assertEquals("V", arabicNumeral.toRoman(5));
 		assertEquals("VI", arabicNumeral.toRoman(6));
 		assertEquals("VII", arabicNumeral.toRoman(7));
-		assertEquals("VIII", arabicNumeral.toRoman(8));	}
+		assertEquals("VIII", arabicNumeral.toRoman(8));
+	}
 }
