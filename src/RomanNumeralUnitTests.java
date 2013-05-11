@@ -75,5 +75,54 @@ public class RomanNumeralUnitTests
 		assertEquals("XLVIII",arabicNumeral.toRoman(48));
 		assertEquals("XLIX",arabicNumeral.toRoman(49));
 	}
+	
+	@Test
+	public void if50to89Test()
+	{
+		assertEquals("L",arabicNumeral.toRoman(50));
+		assertEquals("LI",arabicNumeral.toRoman(51));
+		assertEquals("LII",arabicNumeral.toRoman(52));
+		assertEquals("LIII",arabicNumeral.toRoman(53));
+		assertEquals("LIV",arabicNumeral.toRoman(54));
+		assertEquals("LV",arabicNumeral.toRoman(55));
+		assertEquals("LVI",arabicNumeral.toRoman(56));
+		assertEquals("LVII",arabicNumeral.toRoman(57));
+		assertEquals("LVIII",arabicNumeral.toRoman(58));
+		assertEquals("LIX",arabicNumeral.toRoman(59));
+
+		assertEquals("LX",arabicNumeral.toRoman(60));
+		assertEquals("LXI",arabicNumeral.toRoman(61));
+		assertEquals("LXII",arabicNumeral.toRoman(62));
+		assertEquals("LXIII",arabicNumeral.toRoman(63));
+		assertEquals("LXIV",arabicNumeral.toRoman(64));
+		assertEquals("LXV",arabicNumeral.toRoman(65));
+		assertEquals("LXVI",arabicNumeral.toRoman(66));
+		assertEquals("LXVII",arabicNumeral.toRoman(67));
+		assertEquals("LXVIII",arabicNumeral.toRoman(68));
+		assertEquals("LXIX",arabicNumeral.toRoman(69));
+
+		assertEquals("LXX",arabicNumeral.toRoman(70));
+		assertEquals("LXXI",arabicNumeral.toRoman(71));
+		assertEquals("LXXII",arabicNumeral.toRoman(72));
+		assertEquals("LXXIII",arabicNumeral.toRoman(73));
+		assertEquals("LXXIV",arabicNumeral.toRoman(74));
+		assertEquals("LXXV",arabicNumeral.toRoman(75));
+		assertEquals("LXXVI",arabicNumeral.toRoman(76));
+		assertEquals("LXXVII",arabicNumeral.toRoman(77));
+		assertEquals("LXXVIII",arabicNumeral.toRoman(78));
+		assertEquals("LXXIX",arabicNumeral.toRoman(79));
+
+		assertEquals("LXXX",arabicNumeral.toRoman(80));
+		assertEquals("LXXXI",arabicNumeral.toRoman(81));
+		assertEquals("LXXXII",arabicNumeral.toRoman(82));
+		assertEquals("LXXXIII",arabicNumeral.toRoman(83));
+		assertEquals("LXXXIV",arabicNumeral.toRoman(84));
+		assertEquals("LXXXV",arabicNumeral.toRoman(85));
+		assertEquals("LXXXVI",arabicNumeral.toRoman(86));
+		assertEquals("LXXXVII",arabicNumeral.toRoman(87));
+		assertEquals("LXXXVIII",arabicNumeral.toRoman(88));
+		assertEquals("LXXXIX",arabicNumeral.toRoman(89));
+	}
+
 
 }
