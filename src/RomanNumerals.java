@@ -8,20 +8,22 @@ public class RomanNumerals
 
 	public RomanNumerals()
 	{
-		arabicNumerals = new int[3];
-		arabicNumerals[0] = 10;
-		arabicNumerals[1] = 5;
-		arabicNumerals[2] = 1;
+		arabicNumerals = new int[4];
+		arabicNumerals[0] = 50;
+		arabicNumerals[1] = 10;
+		arabicNumerals[2] = 5;
+		arabicNumerals[3] = 1;
 		
 		
 		specialArabicNumerals = new int[2];
 		specialArabicNumerals[0] = 9;
 		specialArabicNumerals[1] = 4;
 		
-		romanNumerals = new String[3];
-		romanNumerals[0] = "X";
-		romanNumerals[1] = "V";
-		romanNumerals[2] = "I";
+		romanNumerals = new String[4];
+		romanNumerals[0] = "L";
+		romanNumerals[1] = "X";
+		romanNumerals[2] = "V";
+		romanNumerals[3] = "I";
 
 		specialRomanNumerals = new String[2];
 		specialRomanNumerals[0] = "IX";

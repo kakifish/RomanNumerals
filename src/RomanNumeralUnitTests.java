@@ -61,4 +61,19 @@ public class RomanNumeralUnitTests
 		assertEquals("XXXIX",arabicNumeral.toRoman(39));
 	}
 
+	@Test
+	public void if40to49Test()
+	{
+		assertEquals("XL",arabicNumeral.toRoman(40));
+		assertEquals("XLI",arabicNumeral.toRoman(41));
+		assertEquals("XLII",arabicNumeral.toRoman(42));
+		assertEquals("XLIII",arabicNumeral.toRoman(43));
+		assertEquals("XLIV",arabicNumeral.toRoman(44));
+		assertEquals("XLV",arabicNumeral.toRoman(45));
+		assertEquals("XLVI",arabicNumeral.toRoman(46));
+		assertEquals("XLVII",arabicNumeral.toRoman(47));
+		assertEquals("XLVIII",arabicNumeral.toRoman(48));
+		assertEquals("XLIX",arabicNumeral.toRoman(49));
+	}
+
 }
