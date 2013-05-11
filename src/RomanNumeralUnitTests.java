@@ -77,7 +77,7 @@ public class RomanNumeralUnitTests
 	}
 	
 	@Test
-	public void if50to89Test()
+	public void if50to89Tests()
 	{
 		assertEquals("L",arabicNumeral.toRoman(50));
 		assertEquals("LI",arabicNumeral.toRoman(51));
