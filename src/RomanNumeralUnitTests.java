@@ -18,6 +18,9 @@ public class RomanNumeralUnitTests
 	@Test
 	public void if4Test()
 	{
-		assertEquals("IV", arabicNumeral.toRoman(4));		
-	}
+		assertEquals("IV", arabicNumeral.toRoman(4));
+		assertEquals("V", arabicNumeral.toRoman(5));
+		assertEquals("VI", arabicNumeral.toRoman(6));
+		assertEquals("VII", arabicNumeral.toRoman(7));
+		assertEquals("VIII", arabicNumeral.toRoman(8));	}
 }
