@@ -8,22 +8,25 @@ public class RomanNumerals
 
 	public RomanNumerals()
 	{
-		arabicNumerals = new int[2];
+		arabicNumerals = new int[3];
 		arabicNumerals[0] = 10;
 		arabicNumerals[1] = 5;
 		arabicNumerals[2] = 1;
 		
 		
-		specialArabicNumerals = new int[1];
-		specialArabicNumerals[0] = 4;
+		specialArabicNumerals = new int[2];
+		specialArabicNumerals[0] = 9;
+		specialArabicNumerals[1] = 4;
 		
-		romanNumerals = new String[2];
+		romanNumerals = new String[3];
 		romanNumerals[0] = "X";
 		romanNumerals[1] = "V";
 		romanNumerals[2] = "I";
 
-		specialRomanNumerals = new String[1];
-		specialRomanNumerals[0] = "IV";
+		specialRomanNumerals = new String[2];
+		specialRomanNumerals[0] = "IX";
+		specialRomanNumerals[1] = "IV";
+
 		
 	}
 	
@@ -37,13 +40,12 @@ public class RomanNumerals
 				numberToRoman += romanNumerals[i];
 				num -= arabicNumerals[i];
 			}
-			if(i != 1 && num >= specialArabicNumerals[i])
+			if(i != 2 && num >= specialArabicNumerals[i])
 			{
 				numberToRoman += specialRomanNumerals[i];
 				num -= specialArabicNumerals[i];
 			}
-		}
-		
+		}	
 		return numberToRoman;
 	}
 }
