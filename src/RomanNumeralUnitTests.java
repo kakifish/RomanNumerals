@@ -26,7 +26,7 @@ public class RomanNumeralUnitTests
 	}
 	
 	@Test
-	public void if9to39Test()
+	public void if9to39Tests()
 	{
 		assertEquals("IX",arabicNumeral.toRoman(9));
 		assertEquals("X",arabicNumeral.toRoman(10));
