@@ -144,7 +144,7 @@ public class RomanNumeralUnitTests
 	}
 	
 	@Test
-	public void if400to499Test()
+	public void if400to499Tests()
 	{
 		assertEquals("CD",arabicNumeral.toRoman(400));
 		assertEquals("CDXLII",arabicNumeral.toRoman(442));
@@ -154,7 +154,6 @@ public class RomanNumeralUnitTests
 		assertEquals("CDXCI",arabicNumeral.toRoman(491));
 		assertEquals("CDXCIX",arabicNumeral.toRoman(499));
 		assertEquals("CDXCIV",arabicNumeral.toRoman(494));
-
 	}
 
 }
