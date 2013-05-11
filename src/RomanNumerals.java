@@ -8,28 +8,32 @@ public class RomanNumerals
 
 	public RomanNumerals()
 	{
-		arabicNumerals = new int[4];
-		arabicNumerals[0] = 50;
-		arabicNumerals[1] = 10;
-		arabicNumerals[2] = 5;
-		arabicNumerals[3] = 1;
+		arabicNumerals = new int[5];
+		arabicNumerals[0] = 100;
+		arabicNumerals[1] = 50;
+		arabicNumerals[2] = 10;
+		arabicNumerals[3] = 5;
+		arabicNumerals[4] = 1;
 		
 		
-		specialArabicNumerals = new int[3];
-		specialArabicNumerals[0] = 40;		
-		specialArabicNumerals[1] = 9;
-		specialArabicNumerals[2] = 4;
+		specialArabicNumerals = new int[4];
+		specialArabicNumerals[0] = 90;		
+		specialArabicNumerals[1] = 40;		
+		specialArabicNumerals[2] = 9;
+		specialArabicNumerals[3] = 4;
 		
-		romanNumerals = new String[4];
-		romanNumerals[0] = "L";
-		romanNumerals[1] = "X";
-		romanNumerals[2] = "V";
-		romanNumerals[3] = "I";
+		romanNumerals = new String[5];
+		romanNumerals[0] = "C";
+		romanNumerals[1] = "L";
+		romanNumerals[2] = "X";
+		romanNumerals[3] = "V";
+		romanNumerals[4] = "I";
 
-		specialRomanNumerals = new String[3];
-		specialRomanNumerals[0] = "XL";
-		specialRomanNumerals[1] = "IX";
-		specialRomanNumerals[2] = "IV";
+		specialRomanNumerals = new String[4];
+		specialRomanNumerals[0] = "XC";
+		specialRomanNumerals[1] = "XL";
+		specialRomanNumerals[2] = "IX";
+		specialRomanNumerals[3] = "IV";
 
 		
 	}
@@ -44,7 +48,7 @@ public class RomanNumerals
 				numberToRoman += romanNumerals[i];
 				num -= arabicNumerals[i];
 			}
-			if(i != 3 && num >= specialArabicNumerals[i])
+			if(i != 4 && num >= specialArabicNumerals[i])
 			{
 				numberToRoman += specialRomanNumerals[i];
 				num -= specialArabicNumerals[i];
