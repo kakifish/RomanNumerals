@@ -26,7 +26,7 @@ public class RomanNumeralUnitTests
 	}
 	
 	@Test
-	public void if9to39Tests()
+	public void if9To39Tests()
 	{
 		assertEquals("IX",arabicNumeral.toRoman(9));
 		assertEquals("X",arabicNumeral.toRoman(10));
@@ -62,7 +62,7 @@ public class RomanNumeralUnitTests
 	}
 
 	@Test
-	public void if40to49Test()
+	public void if40To49Tests()
 	{
 		assertEquals("XL",arabicNumeral.toRoman(40));
 		assertEquals("XLI",arabicNumeral.toRoman(41));
@@ -77,7 +77,7 @@ public class RomanNumeralUnitTests
 	}
 	
 	@Test
-	public void if50to89Tests()
+	public void if50To89Tests()
 	{
 		assertEquals("L",arabicNumeral.toRoman(50));
 		assertEquals("LI",arabicNumeral.toRoman(51));
@@ -125,7 +125,7 @@ public class RomanNumeralUnitTests
 	}
 
 	@Test
-	public void if90to190Test()
+	public void if90To190Tests()
 	{
 
 		assertEquals("XC",arabicNumeral.toRoman(90));
