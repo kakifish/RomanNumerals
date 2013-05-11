@@ -167,5 +167,45 @@ public class RomanNumeralUnitTests
 		assertEquals("DCCCXC",arabicNumeral.toRoman(890));
 	}
 
-
+	@Test
+	public void ifMoreThan900Test()
+	{
+		assertEquals("CM",arabicNumeral.toRoman(900));
+		assertEquals("CMXCVIII",arabicNumeral.toRoman(998));
+		assertEquals("MDCCXII",arabicNumeral.toRoman(1712));
+		assertEquals("MCMXC",arabicNumeral.toRoman(1990));
+		assertEquals("MCMXCI",arabicNumeral.toRoman(1991));
+		assertEquals("MCMXCII",arabicNumeral.toRoman(1992));
+		assertEquals("MCMXCIII",arabicNumeral.toRoman(1993));
+		assertEquals("MCMXCIV",arabicNumeral.toRoman(1994));
+		assertEquals("MCMXCV",arabicNumeral.toRoman(1995));
+		assertEquals("MCMXCVI",arabicNumeral.toRoman(1996));
+		assertEquals("MCMXCVII",arabicNumeral.toRoman(1997));
+		assertEquals("MCMXCVIII",arabicNumeral.toRoman(1998));
+		assertEquals("MCMXCIX",arabicNumeral.toRoman(1999));
+		assertEquals("MM",arabicNumeral.toRoman(2000));
+		assertEquals("MMI",arabicNumeral.toRoman(2001));
+		assertEquals("MMII",arabicNumeral.toRoman(2002));
+		assertEquals("MMIII",arabicNumeral.toRoman(2003));
+		assertEquals("MMIV",arabicNumeral.toRoman(2004));
+		assertEquals("MMV",arabicNumeral.toRoman(2005));
+		assertEquals("MMVI",arabicNumeral.toRoman(2006));
+		assertEquals("MMVII",arabicNumeral.toRoman(2007));
+		assertEquals("MMVIII",arabicNumeral.toRoman(2008));
+		assertEquals("MMIX",arabicNumeral.toRoman(2009));
+		assertEquals("MMX",arabicNumeral.toRoman(2010));
+		assertEquals("MMXI",arabicNumeral.toRoman(2011));
+		assertEquals("MMXII",arabicNumeral.toRoman(2012));
+		assertEquals("MMXIII",arabicNumeral.toRoman(2013));
+		assertEquals("MMXIV",arabicNumeral.toRoman(2014));
+		assertEquals("MMXV",arabicNumeral.toRoman(2015));
+		assertEquals("MMXVI",arabicNumeral.toRoman(2016));
+		assertEquals("MD",arabicNumeral.toRoman(1500));
+		assertEquals("MDCCC",arabicNumeral.toRoman(1800));
+		assertEquals("MMCMXCIX",arabicNumeral.toRoman(2999));
+		assertEquals("MMCMXLIX",arabicNumeral.toRoman(2949));
+		assertEquals("MMDXLIX",arabicNumeral.toRoman(2549));
+		assertEquals("MMCDXLIX",arabicNumeral.toRoman(2449));
+		assertEquals("MMM",arabicNumeral.toRoman(3000));
+	}
 }
